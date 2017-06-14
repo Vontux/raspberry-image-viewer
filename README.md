@@ -5,7 +5,7 @@ An automatic kiosk mode image viewer for Raspberry pi, Raspbian focused for use 
 
 Image viewer that loads all image files supported by the Linux frame buffer image viewer (fbi) from a usb drive (if present) and shows the image(s) fullscreen.
 
-If no usb drive is present it loads the previously used images
+If no usb drive is present it loads an image that requests the user insert a USB drive with images and reboot the PI.
 
 Requirements
 ------------
