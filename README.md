@@ -3,7 +3,7 @@ raspberry-image-viewer
 
 An automatic kiosk mode image viewer for Raspberry pi, Raspbian
 
-Image viewer that loads a predefined fileextension (.jpg and .png) from an usb drive (if present) to disk and shows the image(s) fullscreen.
+Image viewer that loads images with predefined fileextensions (.jpg and .png) from a usb drive (if present) and shows the image(s) fullscreen.
 
 If no usb drive is present it loads the previously used images
 
