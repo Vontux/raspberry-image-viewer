@@ -14,3 +14,9 @@ mkdir /home/pi/images
 
 echo "Installing Linux frame buffer image viewer"
 sudo apt-get install fbi
+
+echo "Adjusting HDMI configuration for 5 inch Waveshar display"
+sudo sh -c "echo 'hdmi_group=2' >> /boot/config.txt"
+sudo sh -c "echo 'hdmi_mode=1' >> /boot/config.txt"
+sudo sh -c "echo 'hdmi_mode=87' >> /boot/config.txt"
+sudo sh -c "echo 'hdmi_cvt 800 480 60 6 0 0 0' >> /boot/config.txt"
