@@ -35,4 +35,3 @@ Manual
 Todo
 ----
 * Add code for handling button presses at boot to reboot and safely power off PI.
-* Add to installation script code for configuration of the 5 inch HDMI Waveshare display.
