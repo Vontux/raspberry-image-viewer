@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Installing Raspberry pi GPIO python library"
+sudo apt-get install python-dev python-rpi.gpio
+
 echo "Adding showimages to .bashrc"
 echo "/home/pi/showimages.sh" >> /home/pi/.bashrc
 
