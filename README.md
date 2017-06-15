@@ -9,7 +9,10 @@ If no usb drive is present it loads an image that requests the user insert a USB
 
 Requirements
 ------------
-Linux frame buffer image viewer (fbi)
+* Linux frame buffer image viewer (fbi)
+* Use of Raspbian Lite
+* Use of the Raspberry PI 3 (probably fine with PI2, B+ and A+)
+* Use of 5 inch HDMI Waveshare display(easy to change this with minor code tweaks if you so desire).
 
 Installation
 ------------
