@@ -10,7 +10,7 @@ If no usb drive is present it loads an image that requests the user insert a USB
 Requirements
 ------------
 * Linux frame buffer image viewer (fbi)
-* Use of Raspbian Lite
+* Use of Raspbian Lite. A fresh installation is assumed but may not necessaryily be required.
 * Use of the Raspberry PI 3 (probably fine with PI2, B+ and A+)
 * Use of 5 inch HDMI Waveshare display(easy to change this with minor code tweaks if you so desire).
 
@@ -26,6 +26,13 @@ Manual
 * mkdir /home/pi/images
 * sudo apt-get install fbi (if not already installed)
 * sudo apt-get install python-dev python-rpi.gpio
+* Add the following lines to the HDMI configuration section of the /boot/config.txt
+  * hdmi_group=2
+  * hdmi_mode=1
+  * hdmi_mode=87
+  * hdmi_cvt 800 480 60 6 0 0 0
 
 Todo
 ----
+* Add code for handling button presses at boot to reboot and safely power off PI.
+* Add to installation script code for configuration of the 5 inch HDMI Waveshare display.
