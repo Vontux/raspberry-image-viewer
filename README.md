@@ -22,6 +22,7 @@ Manual
 * mkdir /home/pi/usbmount
 * mkdir /home/pi/images
 * sudo apt-get install fbi (if not already installed)
+* sudo apt-get install python-dev python-rpi.gpio
 
 Todo
 ----
