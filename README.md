@@ -34,4 +34,4 @@ Manual
 
 Todo
 ----
-* Add code for handling button presses at boot to reboot and safely power off PI.
+* Finalize testing ton confirm this all works.
