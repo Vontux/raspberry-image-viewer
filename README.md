@@ -37,4 +37,3 @@ Manual
 Todo
 ----
 * Finalize testing to confirm this all works.
-* Add the permenant images
