@@ -16,6 +16,7 @@ Requirements
 
 Installation
 ------------
+Copy files down into /home/pi then either run ./install.sh or follow manual instructions.
 
 Automatic
 * ./install.sh
