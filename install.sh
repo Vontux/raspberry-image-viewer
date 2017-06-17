@@ -11,6 +11,7 @@ mkdir /home/pi/usbmount
 
 echo "Creating image dir"
 mkdir /home/pi/images
+mv /home/pi/nopics.png /home/pi/images
 
 echo "Add reboot Script"
 sudo sh -c "echo 'sudo python /home/pi/poweroff.py &' >> /etc/rc.local"
