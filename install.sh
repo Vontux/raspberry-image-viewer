@@ -12,6 +12,9 @@ mkdir /home/pi/usbmount
 echo "Creating image dir"
 mkdir /home/pi/images
 
+echo "Add reboot Script"
+sudo sh -c "echo 'sudo python /home/pi/poweroff.py &' >> /etc/rc.local"
+
 echo "Installing Linux frame buffer image viewer"
 sudo apt-get install fbi
 
@@ -20,3 +23,6 @@ sudo sh -c "echo 'hdmi_group=2' >> /boot/config.txt"
 sudo sh -c "echo 'hdmi_mode=1' >> /boot/config.txt"
 sudo sh -c "echo 'hdmi_mode=87' >> /boot/config.txt"
 sudo sh -c "echo 'hdmi_cvt 800 480 60 6 0 0 0' >> /boot/config.txt"
+echo "Rebooting...."
+sleep 10
+sudo reboot
