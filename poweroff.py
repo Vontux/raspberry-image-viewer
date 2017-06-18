@@ -12,9 +12,11 @@ GPIO.setup(21, GPIO.IN,pull_up_down=GPIO.PUD_UP)
  
 while True:
     if (GPIO.input(13) == False):
-        os.system('sudo shutdown reboot')
+        os.system('echo Reboot')
+        os.system('sudo reboot')
  
     if (GPIO.input(21) == False):
+        os.system('echo Poweroff')
         os.system('sudo shutdown -h now')
  
  
