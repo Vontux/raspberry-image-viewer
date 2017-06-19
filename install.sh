@@ -14,7 +14,7 @@ mkdir /home/pi/images
 mv /home/pi/nopics.png /home/pi/images
 
 echo "Add reboot Script"
-sudo sh -c "echo 'sudo python /home/pi/poweroff.py &' >> /etc/rc.local"
+sudo sh -c "echo '/home/pi/wrapper.sh &' >> /etc/rc.local"
 
 echo "Installing Linux frame buffer image viewer"
 sudo apt-get install fbi
