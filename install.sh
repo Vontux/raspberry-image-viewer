@@ -20,6 +20,8 @@ echo "Installing Linux frame buffer image viewer"
 sudo apt-get install fbi
 
 echo "Adjusting HDMI configuration for 5 inch Waveshar display"
+sudo sh -c "echo 'hdmi_drive=1' >> /boot/config.txt"
+sudo sh -c "echo 'hdmi_force_hotplug=1' >> /boot/config.txt"
 sudo sh -c "echo 'hdmi_group=2' >> /boot/config.txt"
 sudo sh -c "echo 'hdmi_mode=1' >> /boot/config.txt"
 sudo sh -c "echo 'hdmi_mode=87' >> /boot/config.txt"
