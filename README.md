@@ -29,6 +29,8 @@ Manual
 * sudo apt-get install fbi (if not already installed)
 * sudo apt-get install python-dev python-rpi.gpio
 * Add the following lines to the HDMI configuration section of the /boot/config.txt
+  * hdmi_drive=1
+  * hdmi_force_hotplug=1
   * hdmi_group=2
   * hdmi_mode=1
   * hdmi_mode=87
