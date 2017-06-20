@@ -4,7 +4,7 @@ echo "Installing Raspberry pi GPIO python library"
 sudo apt-get install python-dev python-rpi.gpio
 
 echo "Adding showimages to .bashrc"
-echo "/home/pi/showimages.sh" >> /home/pi/.bashrc
+sudo sh -c "echo 'sudo /home/pi/showimages.sh &' >> /home/pi/.bashrc"
 
 echo "Creating usb mount point"
 mkdir /home/pi/usbmount
@@ -13,8 +13,8 @@ echo "Creating image dir"
 mkdir /home/pi/images
 mv /home/pi/nopics.png /home/pi/images
 
-echo "Add reboot Script"
-sudo sh -c "echo '/home/pi/wrapper.sh &' >> /etc/rc.local"
+echo "Add reboot and poweroff Script"
+sudo sh -c "echo 'sudo /home/pi/poweroff.py &' >> /home/pi/.bashrc"
 
 echo "Installing Linux frame buffer image viewer"
 sudo apt-get install fbi
