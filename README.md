@@ -11,7 +11,7 @@ Requirements
 ------------
 * Linux frame buffer image viewer (fbi)
 * GPIO library for python
-* Use of Raspbian Lite. A fresh installation is assumed but may not necessaryily be required.
+* Use of Raspbian Lite. A fresh installation is assumed but may not necessarily be required.
 * Use of the Raspberry PI 3 (probably fine with PI2, B+ and A+)
 * Use of 5 inch HDMI Waveshare display(easy to change this with minor code tweaks if you so desire).
 
@@ -20,12 +20,15 @@ Installation
 Copy files down into /home/pi then either run ./install.sh or follow manual instructions.
 
 Automatic
+* sudo chmod ugo+x install.sh
 * ./install.sh
 
 Manual
 * Add /home/pi/showimages.sh (or the path to the file) to your .bashrc file
+* Add sudo /home/pi/poweroff.py & to your.bashrc file
 * mkdir /home/pi/usbmount
 * mkdir /home/pi/images
+* move nopics.png to /home/pi/images
 * sudo apt-get install fbi (if not already installed)
 * sudo apt-get install python-dev python-rpi.gpio
 * Add the following lines to the HDMI configuration section of the /boot/config.txt
