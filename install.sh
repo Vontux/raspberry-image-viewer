@@ -15,6 +15,7 @@ mv /home/pi/nopics.png /home/pi/images
 
 echo "Add reboot and poweroff Script"
 sudo sh -c "echo 'sudo /home/pi/poweroff.py &' >> /home/pi/.bashrc"
+sudo sh -c "echo 'sudo chmod ugo+x /home/pi/poweroff.py'"
 
 echo "Installing Linux frame buffer image viewer"
 sudo apt-get install fbi
